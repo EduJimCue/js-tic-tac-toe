@@ -11,61 +11,34 @@
     <h1>Tic tac toe</h1>
     <main>
         <div class="container">
-            <div class="grow">
-                <div class="row">
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                </div>
-                <div class="row">
-                    <div class="cell"></div>
-                    <div id="cell-1-1" class="cell-x"></div>
-                    <div class="cell"></div>
-                </div>
-                <div class="row">
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                </div>
+            <div  id="grow" class="grow">
             </div>
             <div class="main__information">
                 <div>
                     <div>Turno</div>
-                    <div class="turn-cell-o"></div>
+                    <div id="turn" class="turn-cell-o"></div>
                 </div>
                 <div>
                     <div>Movements</div>
                     <table>
                         <thead>
                             <tr>
-                                <td>Orden</td>
+                                <td>Turno</td>
                                 <td>Casilla</td>
                                 <td>Tipo</td>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>1-1</td>
-                                <td>cruz</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2-1</td>
-                                <td>raya</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
-                <!-- <table>
-                    <thead></thead>
-                </table> -->
             </div>
         </div>
     </main>
     <div style="display:flex;justify-content:center">
-        <button id="restart">New game</button>
+        <button id="restart" onclick="reset(3)">3x3</button>
+        <button id="restart" onclick="reset(4)">4x4</button>
+        <button id="restart" onclick="reset(5)">5x5</button>
     </div>
 </body>
-
 </html>
